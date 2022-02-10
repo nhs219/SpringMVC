@@ -16,6 +16,7 @@ import java.util.List;
 public class SpringMemberControllerV3 {
     private MemberRepository memberRepository = MemberRepository.getInstance();
 
+    //RequestMapping을 GetMapping, PostMapping등과 같이 변경 가능하다. 더 간결해짐.
 //    @RequestMapping(value = "/new-form", method = RequestMethod.GET)
     @GetMapping("/new-form")
     public String newForm() {
